@@ -1,0 +1,10 @@
+type Todo @model @auth(rules: [{ allow: public }]) @searchable {
+  id: ID!
+  content: String
+}
+
+type Author @model @auth(rules: [{ allow: public }]) @searchable {
+  id: ID!
+  firstName: String
+  lastName: String
+}
